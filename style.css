@@ -1,0 +1,28 @@
+.mkt-cloud {
+    position: relative;
+}
+
+#bloco {
+    position: absolute;
+}
+
+#mktcloud{
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+}
+
+.txt {
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+}
+#rd{
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+}
+
+.html {
+    position: relative;
+}
