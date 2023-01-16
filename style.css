@@ -1,28 +1,229 @@
-.mkt-cloud {
-    position: relative;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#bloco {
-    position: absolute;
+body {
+    max-width: 1200px;
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+   margin: auto;
 }
 
-#mktcloud{
-    position: absolute;
-    font-size: 12px;
+header{
+    margin-bottom: 2rem;
+}       
+
+.ctto {
+    margin: auto;
+display: flex;
+padding: 0.5rem;
+justify-content: end;
+      }
+
+ .ctto img{
+    width: 20px;
+    padding-bottom: 4rem;
+    opacity: 95%;
+    color: #222;
+       }
+
+main {
+    margin: auto;
+    display: grid;
+    grid-row-gap: 2rem;
+
+    grid-template-areas:
+        "profile resume resume"
+        "tittle  tittle tittle"
+        "Sales  RD  DEV"
+        "strategy  certificate Provisorio";
+}
+
+.profile {
+    grid-area: profile;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    
+}
+ 
+.name {
+    padding-top: 1rem;
+}
+
+.titulo{
+
+    padding-bottom: 4rem;
+}
+
+
+.profile img {
+    width: 300px;
+    border-radius: 99%;
+}
+
+.resume {
+    grid-area: resume;
+    padding: 5rem;
+    text-align: justify;
+}
+
+.tittle {
+    font-weight: 800;
+    padding: 2rem;
+    font-size: 30px;
+    grid-area: tittle;
+    text-align: center;
+
+}
+
+.Sales {
+    padding: 2rem;
+    grid-area: Sales;
+
+    display: grid;
+    grid-template-areas: "img-mkt-cloud   img-mkt-cloud"
+    "topic-mkt-cloud resume-mkt-cloud";
+
+    margin: auto;
+    grid-row-gap: 2rem;
+}
+
+
+.Sales img {
+    width: 250px;
+}
+
+
+.RD {
+    padding: 2rem;
+    grid-area: RD;
+    background-color: white;
+
+    display: grid;
+    align-items: center;
+    grid-gap: 1rem;
+    text-align: justify;
+}
+
+.RD img {
+    width: 250px;
+}
+
+.DEV {
+    padding: 2rem;
+    grid-area: DEV;
+    }
+
+.strategy {
+    padding: 2rem;
+    grid-area: strategy;
+}
+
+.strategy img{
+    width: 250px;
+}
+
+.certificate {
+    list-style-type: disc;
+    padding: 2rem;
+    grid-area: certificate;
+}
+
+.certificate img {
+    width: 250px;
+}
+
+.Provisorio {
+    padding: 2rem;
+    grid-area: Provisorio;
+}
+
+.Provisorio img {
+    width: 250px;
+}
+
+.tittle-Portfolio {
+    padding: 5rem;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    text-align: justify;
+}
+
+.cards a {
+    color: white;
+    padding: 1rem;
+}
+
+.Portifólio-1 {
+    background-color: rgb(191, 26, 161);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 180px;
+    width: 20%;
+
+    border-radius: 10%;
     text-align: center;
 }
 
-.txt {
-    position: absolute;
-    font-size: 12px;
-    text-align: center;
-}
-#rd{
-    position: absolute;
-    font-size: 12px;
+.Portifólio-2 {
+    background-color: rgb(79, 15, 174);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    height: 180px;
+    width: 20%;
+
+    border-radius: 10%;
     text-align: center;
 }
 
-.html {
-    position: relative;
+.Portifólio-3 {
+    background-color: rgb(7, 179, 19);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 180px;
+    width: 20%;
+
+    border-radius: 10%;
+    text-align: center;
+    color: white;
+
+
+}
+
+.Portifólio-4 {
+    background-color: rgb(163, 101, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 180px;
+    width: 20%;
+
+    border-radius: 10%;
+    text-align: center;
+    color: white;
+
 }
