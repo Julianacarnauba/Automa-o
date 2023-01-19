@@ -35,10 +35,11 @@ main {
     grid-row-gap: 2rem;
 
     grid-template-areas:
-        "profile resume resume"
-        "tittle  tittle tittle"
-        "Sales  RD  DEV"
-        "strategy  certificate Provisorio";
+        "profile              resume           resume"
+        "tittle               tittle           tittle"
+        "Sales               RD                strategy"  
+        "tittle-certificate tittle-certificate tittle-certificate"
+        ".                  certificate              .";
 }
 
 .profile {
@@ -46,18 +47,15 @@ main {
     align-items: center;
     text-align: center;
     font-weight: bold;
-    
 }
  
-.name {
+.profile-name {
     padding-top: 1rem;
 }
 
-.titulo{
-
+.profile-titulo{
     padding-bottom: 4rem;
 }
-
 
 .profile img {
     width: 300px;
@@ -67,16 +65,18 @@ main {
 .resume {
     grid-area: resume;
     padding: 5rem;
+
+    font-size: 18px;
     text-align: justify;
 }
 
 .tittle {
     font-weight: 800;
-    padding: 2rem;
-    font-size: 30px;
-    grid-area: tittle;
+    font-size: 25px;
     text-align: center;
 
+    padding: 2rem;
+    grid-area: tittle;
 }
 
 .Sales {
@@ -84,8 +84,10 @@ main {
     grid-area: Sales;
 
     display: grid;
-    grid-template-areas: "img-mkt-cloud   img-mkt-cloud"
-    "topic-mkt-cloud resume-mkt-cloud";
+    
+    grid-template-areas:
+        "img-mkt-cloud       img-mkt-cloud"
+        "topic-mkt-cloud    resume-mkt-cloud";
 
     margin: auto;
     grid-row-gap: 2rem;
@@ -126,10 +128,18 @@ main {
     width: 250px;
 }
 
-.certificate {
-    list-style-type: disc;
+.tittle-certificate{
+    font-weight: 800;
     padding: 2rem;
-    grid-area: certificate;
+    font-size: 25px;
+    grid-area: tittle-certificate;
+    text-align: center;
+}
+.certificate {
+    padding: 2rem;
+    grid-area: certificate;    
+    text-align: justify;
+    align-content: center;
 }
 
 .certificate img {
@@ -209,7 +219,6 @@ main {
     border-radius: 10%;
     text-align: center;
     color: white;
-
 
 }
 
